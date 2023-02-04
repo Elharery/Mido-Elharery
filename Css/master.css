@@ -12,7 +12,13 @@
 }
 /* End rule code */
 /* Frame Work */
-
+*{
+      outline: none;
+      border: none;
+}
+/* textarea{
+      resize: ;
+} */
 /* End Frame Work */
 *
 {
@@ -153,15 +159,15 @@ li a{
 .section .img img:hover{
       background-color: red;
 }
-/* .section .img {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-} */
 @media (max-width: 767px){
       .section{
-                  margin-left: 20px;
-                  width: fit-content;
+            margin-left: 20px;
+            width: fit-content;
+            flex-direction: column-reverse;
+      }
+      .section .img img{
+            width: 100%;
+            margin-bottom: 50px;
       }
 }
 .section > div > span{
@@ -223,14 +229,14 @@ width: 100%;
             border-radius: 7px;
       }
       .content .boxes .box:not(:last-child) {
-            margin-right: 10%;
+            /* margin-right: 10%; */
       }
       @media (max-width: 767px){
             .content .boxes {
                   flex-wrap: wrap;
             }
             .content .boxes .box:not(:last-child){
-                  margin:0 0 25px 0;
+                  /* margin:0 0 25px 0; */
             }
 
       }
@@ -344,7 +350,6 @@ width: 100%;
       left: 50%;
       transform: translatex(-50%);
 }
-.skills .skill i::before{}
 .skills .skill .blue::after{
       content: 'CSS';
       position: absolute;
@@ -353,14 +358,6 @@ width: 100%;
       top: 100%;
       left: 50%;
       transform: translatex(-50%);
-}
-.skills .skill .blue::before{
-      /* background: gray;
-      width: 200px;
-      height: 20%;
-      position: absolute;
-      top: 95px;
-      left: -60px; */
 }
 .skills .skill .blue{
       color: var(--blue-color);
@@ -380,3 +377,60 @@ width: 100%;
       color: #fff; */
 }
 /* End skills */
+/* start contact */
+.contact{
+      padding-top: 40%;
+}
+@media (max-width: 767px){
+      .contact{
+            padding-top: 80%;
+      }
+      .contact > div{
+            flex-direction: column;
+      }
+}
+.contact > h2{
+      color: #fff;
+      animation-name: box;
+      animation-duration: 0.8s;
+      animation-timing-function: linear;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+      font-size: 40px;
+      text-align: center;
+      margin: auto;
+      width: fit-content;
+      background: red;
+      border-radius: 30px;
+      padding: 7px;
+      margin-bottom: 50px;
+      /* transition: 0.5s; */
+      /* box-shadow: 0 0 10px 0 #fff; */
+}
+@keyframes box{
+      to{
+      box-shadow: 0 0 10px 0 #fff;
+      }
+}
+.contact .box{
+      background-color: gray;
+      border-radius: 10px;
+      padding: 10px;
+      transition: 0.4s;
+      width: 157px;
+      height: 155px;
+}
+.contact .box:hover{
+      transform: translateY(-10px);
+}
+.contact .box a{
+      padding: 35px;
+      font-size: 25px;
+}
+.contact .box span{
+      font-size: 12px;
+}
+.contact form input[type="username"]{}
+.contact form input[type="email"]{}
+.contact form textarea{}
+/* end contact */
