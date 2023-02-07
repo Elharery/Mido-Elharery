@@ -34,6 +34,6 @@ dropDown.addEventListener('click', ()=>{
             ul.style.top='100%';
         }
         else{
-            ul.style.top='0';
+            ul.style.top='-100px';
         }
 })
