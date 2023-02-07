@@ -49,6 +49,9 @@ ul {
 .align-center{
     align-items: center;
 }
+.j-ar{
+    justify-content: space-around;
+}
 .j-cont{
     justify-content: space-between;
 }
@@ -331,6 +334,12 @@ a {
 }
 .orange-m{
     color: var(--orange-color);
+}
+.w-vh{
+    width: 100vh;
+}
+.h-vh{
+    height: 100vh;
 }
 .w-full{
     width: 100%;

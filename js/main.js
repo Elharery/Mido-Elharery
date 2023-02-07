@@ -27,3 +27,13 @@
 //     imgs[i].style = 'margin-right: 0px; width: 50px;'
 // }
 // window.alert('')
+let dropDown= document.querySelector('.toggle-menu');
+let ul= document.querySelector(' .navbar ul');
+dropDown.addEventListener('click', ()=>{
+        if(ul.style.top !== '100%'){
+            ul.style.top='100%';
+        }
+        else{
+            ul.style.top='0';
+        }
+})

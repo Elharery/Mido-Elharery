@@ -29,36 +29,36 @@ re>
 <body>
     <!-- <script src="js/main.js"></script> -->
         <!-- Nav Bar -->
-        <div class="navbar d-flex j-cont align-center"> 
+        <div class="navbar p-relative d-flex j-ar align-center"> 
                 <div class="logo">
-                    <span class="txt-tr c-fff">portfo</span>
-                    <span class="color c-red">lio</span>
+                    <span class="txt-tr">elhare</span>
+                    <span class="color c-red">ry</span>
                 </div>
-                <div class="ul p-relative">
-                <i class="fa-solid fa-list ss"></i>
+                <div class="ul">
+                    <i class="fas fa-bars toggle-menu"></i>
                     <ul>
                         <li>
-                            <a id="hom" href="#home" class="txt-tr c-fff active">home</a>
+                            <a id="hom" href="#home" class="txt-tr  active">home</a>
                         </li>
                         <li>
-                            <a href="#portfolio" class="txt-tr c-fff">portfolio</a>
+                            <a href="#about" class="txt-tr ">about</a>
                         </li>
                         <!-- <li>
                             <a href="" class="txt-tr c-fff">services</a>
                         </li> -->
                         <li>
-                            <a href="#skills" class="txt-tr c-fff">skills</a>
+                            <a href="#services" class="txt-tr ">services</a>
                         </li>
-                        <li>
-                            <a href="#contact" class="txt-tr c-fff">contact us</a>
-                        </li>
+                        <!-- <li>
+                            <a href="#contact" class="txt-tr ">contact us</a>
+                        </li> -->
                     </ul>
                 </div>
-                <div class="button pointer">
+                <!-- <div class="button pointer">
                     <a href="tel:01123435870" class="">
                         <span class="txt-tr c-fff">tell me</span>
                     </a>
-                </div>
+                </div> -->
         </div>
         <!-- End Nav Bar -->
         <!-- start section -->
@@ -67,12 +67,38 @@ re>
                     <span class="txt-tr">hello my name is</span>
                     <h2 class="c-fff" style="font-size: 70px; margin: 0;">Elharery</h2>
                     <h3 class="c-fff">i'm a web develop</h3>
-                    <div class="inp">
+                    <div class="message d-flex gap-10 pt-10">
+                        <a href="#about" class="">
+                            <div class="txt-tr">about me</div>
+                        </a>
+                        <a href="tel:01123435870" class="">
+                            <div class="txt-tr">contact me</div>
+                        </a>
+                    </div>
+                    <div class="links d-flex gap-10">
+                        <!-- <div class=""><i class="fab fa-linkedin-in"></i></div> -->
+                        <div class="">
+                            <a class=" fs-15 c-fff" target="_blank" href="https://github.com/Elharery">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        </div>
+                        <div class="">
+                            <a class="c-fff" target="_blank" href="https://www.facebook.com/moelharery">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        </div>
+                        <div class="">
+                            <a href="mailto:midoelharery@gmail.com" class="c-fff" target="_blank">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- <div class="inp">
                             <form class="p-relative" action="">
                                 <input type="email" name="mail" id="mail" placeholder="Enter Your Email" class="p-relativ">
                                 <input type="submit" name="submit" id="submit" value="Let's Start" class="pointer p-abs">
                             </form>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="img">
                     <img src="image/avatar.png" alt="">
@@ -80,7 +106,65 @@ re>
         </div>
         <!-- End section -->
         <!-- Start content -->
-            <div class="content">
+        <div id="about" class="about bg-fff">
+                <h2 class="txt-tr text-align mt-30">about me</h2>
+                <div class="about-me d-flex align-center gap">
+                    <div class="img">
+                        <img src="image/img-ab.svg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3 class="txt-tr">
+                            I'm <span class="txt-tr c-red">mohamed</span> and I'm a Front-End Developer
+                        </h3>
+                        <p class="txt-tr">
+                            When I was young in elementary school, I studied at Orman School in Dokki,
+                            and in middle school I studied at the martyr Abdel Moneim Riyad in Dokki as well.
+                            I am currently in high school at Al-Hayat School, and I am currently learning programming.
+                        </p>
+                    </div>
+                </div>
+        </div>
+        <!-- start serv -->
+        <div id="services" class="services ">
+            <h2 class="txt-tr c-fff text-align">services</h2>
+            <div class="all-box d-flex align-center j-center gap">
+                <div class="box learned">
+                    <i class="fas fa-code not" ></i>
+                    <h4 class="txt-tr c-fff">
+                        Front-End developer
+                    </h4>
+                    <p class="txt-tr c-fff">
+                        I develop the front end of the website
+                    </p>
+                </div>
+                <div class="box box-2 p-relative">
+                    <div class="p-abs rt">
+                        <i class="fa-solid fa-gear fa-fw setting"></i>
+                    </div>
+                    <i class="fas fa-paint-brush overlay"></i>
+                    <h4 class="txt-tr c-fff">
+                        Web Design UX/UI
+                    </h4>
+                    <p class="txt-tr c-fff">
+                        I design user interfaces for professional web sites..
+                    </p>
+                </div>
+                <div class="box box-3 p-relative">
+                    <div class="p-abs rt">
+                        <i class="fa-solid fa-gear fa-fw setting"></i>
+                    </div>
+                    <i class="fas fa-code overlay" ></i>
+                    <h4 class="txt-tr c-fff">
+                        Mobile App Developement
+                    </h4>
+                    <p class="txt-tr c-fff">
+                        I develop professional mobile app IOS and ANDROID.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- end serv -->
+            <!-- <div class="content">
                 <h2 class="txt-tr c-fff" id="portfolio">portfolio</h2>
                 <div class="boxes gap d-flex align-center j-center">
                     <div class="box perfume d-flex align-center f-col">
@@ -120,10 +204,10 @@ re>
                         </div>
                         </div>
                 </div>
-            </div>
+            </div> -->
         <!-- End content -->
         <!-- Start skills -->
-        <div class="skills p-relative">
+        <!-- <div class="skills p-relative">
             <h2 class="txt-tr c-fff" id="skills">skills</h2>
             <div class="d-flex align-center j-center">
                 <div class="skill p-relative ">
@@ -133,10 +217,10 @@ re>
                     <i class="fab fa-css3-alt blue p-relative"></i>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- End skills -->
         <!-- Start contact -->
-            <div class="contact " id="contact">
+            <!-- <div class="contact " id="contact">
                 <h2 class="txt-tr">contact me</h2>
                 <div class="d-flex align-center j-center gap">
                     <div class="box d-flex f-col align-center">
@@ -163,7 +247,7 @@ re>
                     <input type="email" class="txt-tr">
                     <textarea name="" id="" cols="30" rows="10" class="txt-tr">text me your problem</textarea>
                 </form> -->
-            </div>
+            <!-- </div> -->
         <!-- End contact -->
 <script src="js/main.js"></script>
 </body>

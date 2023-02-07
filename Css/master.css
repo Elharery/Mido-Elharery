@@ -25,6 +25,8 @@
       box-sizing: border-box;
       --webkit--box-sizing: border-box;
       --moz--box-sizing: border-box;
+      margin: 0;
+      padding: 0;
 }
 ::-webkit-scrollbar-thumb {
       background-color: var(--red-color);
@@ -50,14 +52,16 @@ ul{
 }
 body
 {
-      background-color: #000;
-      margin: 0;
-      padding: 0;
+      /* background-color: #000; */
+      background-image: url(../image/background.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
       font-family: 'Comfortaa', 'cursive';
             font-family: 'Open Sans', sans-serif;
 }
 .navbar{
       padding: 10px;
+      background-color: #fff;
 }
 .navbar .logo span:last-child{
       font-size: 25px;
@@ -66,7 +70,7 @@ body
 }
 .navbar i{
       display: none;
-      color: #fff;
+      color: #000;
       /* transition: 0.5s; */
 }
 /* .active{
@@ -86,6 +90,9 @@ li a{
 .navbar li a:hover{
             color: red;
 }
+.navbar .ul i{
+      display: none;
+}
 /* ul{
       display: none;
 } */
@@ -95,39 +102,29 @@ li a{
 
 } */
 @media (max-width: 767px){
+      .navbar .ul i{
+            display: block;
+      }
       .ul{
-            display: none;
+            display: block;
+}
+ul{
+      position: absolute;
+      left: 0;
+      background: #fff;
+      width: 100%;
+      top: 0;
+      z-index: -10;
+      transition: 0.3s;
+}
       }
       .navbar i{
             display: block;
       }
-      .navbar i:hover{
-            position: relative;
-            left: 125px;
-      }
-      .navbar li{
-            transition: 0.5s;
-            padding-bottom: 15px;
-            position: relative;
-            left: -35px;
-            padding: 15px;
-      }
       .navbar li:hover{
             left: 1px;
       }
-      ul{
-            display: none;
-      }
-      .navbar i:hover + ul{
-            display: block;
-      }
-      .navbar ul{
-            transform: translateY(-10px);
-            background-color: #0075ff;
-            transition: 0.3s;
-            border-radius: 10px;
-      }
-}
+
 .navbar .button{
       background-color: red;
       border-radius: 30px;
@@ -142,7 +139,7 @@ li a{
 } */
 /* section */
 .section{
-      
+      /* background-image: url(../image/background.jpeg); */
       margin-top: 200px;
       margin-left: 60px;
       /* width: fit-content; */
@@ -170,6 +167,39 @@ li a{
             margin-bottom: 50px;
       }
 }
+.section .message div:first-child{
+      color: #fff;
+      border: 2px solid red;
+      border-radius: 5px;
+      width: fit-content;
+      padding: 5px;
+      cursor: pointer;
+      transition: .3s;
+      background-color: red;
+}
+.section .message div:first-child:hover{
+      background-color: #000;
+}
+.section .message div:last-child{
+      background: #000;
+      color: #fff;
+      border: 2px solid red;
+      border-radius: 5px;
+      width: fit-content;
+      padding: 5px;
+      cursor: pointer;
+      transition: .3s;
+}
+.section .message div:last-child:hover{
+      background-color: red;
+
+}
+.section .links{
+      padding-top: 10px;
+}
+.section .links div a{
+      font-size: 30px;
+}
 .section > div > span{
       color: antiquewhite;
 }
@@ -192,6 +222,139 @@ width: 100%;
       right: 6px;
 }
 /* end section */
+/* start about me */
+      .about{
+            height: fit-content;
+            margin-top: 30%;
+      }
+      .about > h2{
+            padding: 50px 0;
+            font-size: 30px;
+            font-weight: 700;
+      }
+      .about .about-me .img img{
+            width: 400px;
+      }
+      .about .about-me .text p{
+            line-height: 1.5;
+            padding-top: 15px;
+      }
+      @media (max-width: 767px){
+      .about .about-me .img img{
+            width: 300px;
+      }
+      .about .about-me{
+            flex-direction: column !important; 
+      }
+      .about .about-me .text{
+            margin: 0 15px;
+      }
+}
+/* end about me */
+/* start serv */
+      .services{
+            padding: 50px 0;
+            font-size: 30px;
+            font-weight: 700;
+            
+      }
+      .services h2{
+            margin: 0 auto;
+            width: fit-content;
+      }
+      @media(max-width:767px){
+            .services .all-box {
+                  flex-direction: column !important;
+                  margin: 0 20px;
+            }
+      }
+      .services .all-box .box{
+            background-color: #222;
+            border-radius: 10px;
+            margin-top: 30px;
+            transition: .3s;
+            cursor: pointer;
+            position: relative;
+      }
+      .services .all-box .learned:hover{
+            background-color: crimson;
+      }
+      .services .all-box .box i.not{
+            color: crimson;
+      }
+      .services .all-box .box-2 i:not(:first-child),
+      .services .all-box .box-3 i:not(:first-child){
+            color: crimson;
+      }
+      .services .all-box .box-2 > div.rt,
+      .services .all-box .box-3 > div.rt{
+            padding: 10px;
+            color: #fff;
+            z-index: 9999;
+            top: 50%;
+            /* transform: translateY(-50%); */
+            left: 50%;
+            transform: translate(-50%, -50%);
+      }
+      .services .all-box .box-2 i.setting,
+      .services .all-box .box-3 i.setting{
+            /* padding: 10px;
+            color: #fff;
+            z-index: 9999;
+            top: 50%;
+            transform: translateY(-50%); */
+            padding: 0;
+            font-size: 35px;
+            animation-name: rotate;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            /* animation-direction: alternate; */
+      }
+      @keyframes rotate{
+            to{
+                  transform: rotate(360deg);
+            }
+      }
+      .services .all-box .box-2,
+      .services .all-box .box-3{
+            position: relative;
+            cursor:no-drop;
+            width: 308.29px;
+            height: 227.25px;
+      }
+      .services .all-box .box-2::after,
+      .services .all-box .box-3::after{
+            position: absolute;
+            content: '';
+            background: #000;
+            width: 308.29px;
+            height: 227.25px;
+            left: 0;
+            top: 0;
+            opacity: .7;
+      }
+      .services .all-box .learned:hover i.not{
+            color: #fff;
+      }
+      .services .all-box .box{
+            padding: 20px;
+            text-align: center;
+      }
+      .services .all-box .box i{
+            font-size: 50px;
+            padding: 10px;
+      }
+      .services .all-box .box h4{
+            font-size: 15px;
+            padding: 10px;
+      }
+      .services .all-box .box p{
+            font-size: 15px;
+            line-height: 2;
+            padding: 10px;
+      }
+/* end serv */
 /* Start Content */
       .content{
             padding-top: 30%;
