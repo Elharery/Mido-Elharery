@@ -52,6 +52,8 @@ ul{
 }
 body
 {
+      z-index: -20;
+      position: relative;
       /* background-color: #000; */
       background-image: url(../image/background.jpeg);
             background-repeat: no-repeat;
