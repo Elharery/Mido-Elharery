@@ -12,6 +12,16 @@
 }
 /* End rule code */
 /* Frame Work */
+.logo{
+      /* font-family:  'Dancing Script', "cursive"; */
+      font-family: 'Marck Script', "cursive";
+}
+.logo .elhare{
+      font-size: 30px;
+}
+.logo .ry{
+      font-size: 40px;
+}
 *{
       outline: none;
       border: none;
@@ -66,7 +76,6 @@ body
       background-color: #fff;
 }
 .navbar .logo span:last-child{
-      font-size: 25px;
       margin-left: -4px;
       font-weight: 600;
 }
