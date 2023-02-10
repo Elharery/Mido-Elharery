@@ -482,7 +482,6 @@ width: 100%;
 /* Start skills */
 .before::before{
       content: '';
-      position: absolute;
       background: #fff;
       width: 50%;
       height: 2px;
