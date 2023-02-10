@@ -208,7 +208,7 @@ ul{
 
 }
 .section .links{
-      padding-top: 10px;
+      padding: 10px 0;
 }
 .section .links div a{
       font-size: 30px;
@@ -235,10 +235,15 @@ width: 100%;
       right: 6px;
 }
 /* end section */
+@media (max-width:767px){
+      .about,.services,.contact{
+            margin-top: 50% !important;
+      }
+}
 /* start about me */
       .about{
             height: fit-content;
-            margin-top: 30%;
+            margin-top: 10%;
       }
       .about > h2{
             padding: 50px 0;
@@ -475,93 +480,58 @@ width: 100%;
       } */
 /* End Content */
 /* Start skills */
+.before::before{
+      content: '';
+      position: absolute;
+      background: #fff;
+      width: 50%;
+      height: 2px;
+      display: block;
+}
+.skill h4{
+      font-size: 30px;
+      padding: 10px 0;
+}
 .skills{
-      padding-top: 40%;
+      display: flex;
+      gap: 20px;
 }
-@media (max-width: 767px){
-      .skills{
-            padding-top: 80%;
-            /* flex-direction: column; */
-      }
-      .skills .skill{
-      padding-right: 0;
-      }
-      .skills .skill::before{
-            left: -50px;
-      }
-}
-.skills > h2{
-      animation-name: box;
-      animation-duration: 0.8s;
-      animation-timing-function: linear;
-      animation-direction: alternate;
-      animation-iteration-count: infinite;
-      font-size: 40px;
-      text-align: center;
-      margin: auto;
-      width: fit-content;
-      background: red;
-      border-radius: 30px;
-      padding: 7px;
-      margin-bottom: 50px;
-      /* box-shadow: 0 0 10px 0 #fff; */
-}
-@keyframes box {
-      to{
-      box-shadow: 0 0 10px 0 #fff;
-      }
-}
-.skills .skill{
-      font-family: 'Pushster', "cursive";
-      padding: 20px 30px;
-      /* margin-right: 30px; */
-}
-.skills .skill i{
+.skills .html{
       color: var(--orange-color);
-      font-size: 70px;
+      font-size: 40px;
+      position: relative;
 }
-.skills .skill i::after{
-      /* content: '';
-      background: red;
-      width: 130px;
-      height: 0;
+.skills .html::before{
+      font-family: 'Pushster', "cursive";
       position: absolute;
-      bottom: -7px;
-      left: -60px;
-      padding: 11px; */
       content: 'HTML';
-      position: absolute;
-      font-size: 12px;
-      color: #fff;
       top: 100%;
-      left: 50%;
-      transform: translatex(-50%);
-}
-.skills .skill .blue::after{
-      content: 'CSS';
-      position: absolute;
       font-size: 12px;
-      color: #fff;
-      top: 100%;
-      left: 50%;
-      transform: translatex(-50%);
 }
-.skills .skill .blue{
+.skills .css{
       color: var(--blue-color);
+      font-size: 40px;
+      position: relative;
+      
 }
-.skills .skill::before{
-      content: '';
-}
-.skills .skill::after{
-      content: '';
-      /* font-family: 'Pushster', "cursive";
-      content: "CSS";
+.skills .css::before{
+      font-family: 'Pushster', "cursive";
       position: absolute;
+      content: 'CSS';
       top: 100%;
-      left: 50%;
-      font-size: 13px;
-      transform: translateX(-11px);
-      color: #fff; */
+      font-size: 12px;
+}
+.skills .sass{
+      color: violet;
+      font-size: 40px;
+      position: relative;
+}
+.skills .sass::before{
+      font-family: 'Pushster', "cursive";
+      position: absolute;
+      content: 'SASS';
+      top: 100%;
+      font-size: 12px;
 }
 /* End skills */
 /* start contact */
