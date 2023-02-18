@@ -605,6 +605,9 @@ align-items: center;
       footer .text h3{
             font-size: 13px;
       }
+      footer .icons{
+            padding-bottom: 10px;
+      }
 }
 
 footer .icons a:nth-child(1),
